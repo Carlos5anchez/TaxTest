@@ -5,7 +5,7 @@ document.getElementById("registro-input").addEventListener("click",redirect)
 document.getElementById("signupButton").addEventListener("click",signup)
 
 function redirect(){
-    window.location.location("index.php")
+    window.location.location="index.php"
 }
 
 function signup(){
@@ -44,7 +44,7 @@ function signup(){
             if(localStorage.getItem(rfc) === null){
                 localStorage.setItem(rfc, `${name},${mail},${pass}`);
                 alert("Registro Completo")
-                 window.location("index.php")
+                 window.location="index.php"
 
             }
             else{
