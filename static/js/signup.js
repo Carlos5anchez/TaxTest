@@ -5,7 +5,7 @@ document.getElementById("registro-input").addEventListener("click",redirect)
 document.getElementById("signupButton").addEventListener("click",signup)
 
 function redirect(){
-    window.location.location="index.php"
+    window.location="index.php"
 }
 
 function signup(){
