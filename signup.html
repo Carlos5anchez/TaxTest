@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="apple-touch-icon" sizes="144x144" href="./static/img/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="96x96" href="./static/img/favicon-96x96.png">
+
+    <!-- CSS STYLES -->
+    <link rel="stylesheet" href="./static/css/signup.css">
+
+    <title>Tax Test Signup</title>
+</head>
+<body>
+    
+
+ 
+
+    <div id="body-left">
+        <video autoplay muted loop id="myVideo">
+            <source src="./static/img/video.mp4" type="video/mp4">
+          </video>
+    </div>
+    <div id="body-right">
+        <h1>Sign up to <span>TAX Test</span> </h1>
+        <div id="lobby-form">
+     
+            <p>Name</p>
+            <input type="text" class="loggin-input"  id="name-registro" style="border-radius: 5px; padding-left: 7px; " required placeholder="Ej. Carlos Sanchez">
+            <p>Email</p>
+            <input type="email" class="loggin-input" id="email-registro" style="border-radius: 5px; padding-left: 7px; " required placeholder="carlos_san_23@hotmail.com">
+            <p>RFC</p>
+            <input type="text" class="loggin-input" id="rfc-registro" style="border-radius: 5px; padding-left: 7px; " required placeholder="Ej. SAMC980523" maxlength="10" minlength="10">
+            <p>Password</p>
+            <input type="password" class="loggin-input" id="password-registro" style="border-radius: 5px;  padding-left: 7px;" required placeholder="**********" minlength="5">
+            <p id="labelPass">Confirm Password</p>
+            <input type="password" class="loggin-input" id="passswordConfirm-registro" style="border-radius: 5px;  padding-left: 7px;" required placeholder="**********" minlength="5">
+            <div id="registro-div">
+                <input type="submit" class="submit-input" id="signupButton" value="Sign up">
+                <input type="submit" id="registro-input" value="Back">  
+            
+            </div>
+            
+        </div>
+  
+    </div>
+    <script src="./static/js/signup.js"></script>
+
+
+</body>
+</html>

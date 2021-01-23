@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" type="image/png" sizes="96x96" href="./static/img/favicon-96x96.png">
+    <!-- External Libraries -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- CSS STYLES -->
+    <link rel="stylesheet" href="./static/css/loginStyle.css">
+
+    <title>Tax Company Login</title>
+</head>
+<body>
+    <button type="button" class="btn btn-info btn-lg" id="modalData"data-toggle="modal" data-target="#myModal" style="display: none;">Open Modal</button>
+    <!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog" >
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Verifica tus datos</h5>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+       
+      </div>
+      <div class="modal-body">
+        <p style="font-size: 17px;">Los valores introducidos no coinciden con los registrados en el sistema.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="buttonCloseModal" data-dismiss="modal">Aceptar</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Modal End -->
+    <div id="body-left">
+      
+    </div>
+    <div id="body-right">
+        <h1>Sign in to <span>TAX Test</span> </h1>
+        <div action="#" id="lobby-form">
+    
+            <p>Username</p>
+            <input type="text"id="loginMail"  name="password" class="loggin-input" style="border-radius: 5px; padding-left: 7px; " required placeholder="carlos_san_23@hotmail.com">
+            <p>Password</p>
+            <input type="password" id="loginPass" class="loggin-input" style="border-radius: 5px;  padding-left: 7px;" required placeholder="**********">
+            
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="showPass">
+              <label class="form-check-label" for="flexCheckDefault">
+                Show Password
+              </label>
+            </div>
+            <div id="registro-div">
+                <input type="submit" id="login-input" class="submit-input"  value="Sign in">
+                <input type="submit" id="registro-input" value="Sign up">
+             </div>
+        </div>
+        
+    </div>
+</body>
+<script src="./static/js/login.js"></script>
+<!-- External JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>

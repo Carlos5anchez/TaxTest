@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="96x96" href="./static/img/favicon-96x96.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./static/css/profile.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+</head>
+<nav>
+    <div id="homeContainer">
+        <a id="homeIcon" href="dashboard.html">
+            <img src="./static/img/home.png" alt="" srcset="">
+        </a>
+      
+    </div>
+    
+</nav>
+<body>
+
+
+    <!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog" >
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Palabras Palindromas</h5>
+        <button type="button" class="close" data-dismiss="modal" id="closeImg">&times;</button>
+       
+      </div>
+      <div class="modal-body" id="contenedorPalabras">
+  
+  
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="buttonCloseModal" data-dismiss="modal">Aceptar</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+ 
+   <div id="optionsContainer">
+    <div id="optionsContainer-top" >
+        <h3>Ingresa las palabras<b>!</b></h3>
+        
+    </div>
+    <div id="userData">
+        <p style="font-size: 13px; color: rgb(206, 203, 203);">Te buscarémos las palabras palindromas.</p>
+        <textarea placeholder="Ingresa las palabras separadas por ," rows="15" id="textArea"></textarea>
+        <button id="buscarPalindromos" data-toggle="modal" data-target="#myModal">Buscar</button>
+    </div>
+   
+   </div>
+</body>
+<script src="./static/js/algorithm.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>

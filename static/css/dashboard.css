@@ -1,0 +1,139 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+nav{
+    
+    height: 15%;
+    width: 100%;
+ 
+    left: 0px;
+    top: 0px;
+    position: absolute;
+  
+}#homeContainer{
+    margin-left: 5%;
+    width: 10%;
+    height: 100%;
+
+    display: flex;
+    align-items:center;
+}
+#homeIcon{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+}
+#homeIcon:hover{
+    background-color: #393c41;
+}
+
+#homeIcon>img{
+    
+    width: 45px;
+    height: 40px;
+}
+body{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #202225;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#optionsContainer{
+    width: 70%;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.option{
+    width: 40%;
+    height: 70%;
+    background-color: #2F3136;
+    margin: 5%;
+    box-shadow: 3px 3px #212225, -.5em 0 .4em  #1c1e20;
+    cursor: pointer;
+    transition: .5s;
+    border-radius: 4px;
+    display: flex;
+   flex-direction: column;
+}
+.option:hover{
+    border: 2px solid #EF993E;
+    width: 40.5%;
+    height: 70.5%;
+}
+.option-top{
+    width: 100%;
+    height: 65%;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.option-bottom{
+    width: 100%;
+    height: 25%;
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+}.option-bottom>h2{
+    color:  #EF993E;
+    font-size: 27px;
+}
+.option-bottom>p{
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.582);
+}
+.image{
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    
+}
+.image>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+@media only screen and (max-width: 1150px) {
+    .image{
+      
+        width: 150px;
+        height: 150px;
+       
+    }
+    .option-bottom>h2{
+       
+        font-size: 23px;
+    }
+    .option-bottom>p{
+        font-size: 10px;
+       
+    }
+}
+@media only screen and (max-width: 990px) {
+    .image{
+      
+        width: 100px;
+        height: 100px;
+       
+    }
+    .option-bottom>h2{
+       
+        font-size: 20px;
+    }
+}
