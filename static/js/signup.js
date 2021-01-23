@@ -44,7 +44,7 @@ function signup(){
             if(localStorage.getItem(rfc) === null){
                 localStorage.setItem(rfc, `${name},${mail},${pass}`);
                 alert("Registro Completo")
-                 window.location.replace("index.html")
+                 window.location.href("index.php")
 
             }
             else{
